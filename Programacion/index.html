@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="/Encriptador/Styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="encriptar">
+            <div
+                name="texto" 
+                class="texto" 
+                id="texto" 
+                cols="30"
+                rows="10"
+                placeholder="Ingresa el texto">
+            </div>
+        </div>
+        <div class="Informacion">
+            <p>
+                Escribe tu mensaje solo con letras del 
+                abecedario castellano, omite usar signos 
+                de puntacion y numeros.
+            </p>
+        </div>
+        <div class="botones">
+            <!--boton encriptar-->
+            <div class="botonEncriptar">
+                    <button type="button" class="botonEncriptar" onclick="Encriptar()" id="Encriptar"> Encriptar</button>
+            </div>
+            <!--boton desencriptar-->
+            <div class="botonDesencriptar">
+                <button type="button" class="botonDesencriptar" onclick="Desencriptar()" id="Desencriptar"> Desencriptar</button>
+        </div>
+
+        </div>
+
+        <div class="Encriptar">
+            <img src="" alt="" id="Personaje">
+            <div class="msjencript" id="mensaje_encriptado">
+                <h2 id="titilo-mensaje">Ningun mensaje encriptado</h2>
+                <p id="parrafo">Ingresar un mensaje </p>
+                <textarea 
+                name="mensaje" 
+                id="mensaje"
+                class="mensaje"></textarea>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="/Encriptador/encriptador.js"></script>
+</html>
