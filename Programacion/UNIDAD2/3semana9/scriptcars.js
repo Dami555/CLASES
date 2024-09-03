@@ -7,13 +7,13 @@ for (let i = 0; i < autos.length; i++) {
 document.getElementById("demo").innerHTML=cars;
 
 
-
 let b1 =document.getElementById("btn-push");
 b1.onclick = functionPush;
 
-function functionPush(elemento) {
+
+function functionPush() {
     autos.push("saab");
-    let cars = "";
+    cars = "";
     for (let i = 0; i < autos.length; i++) {
         cars+='<img src="assets/img/'+autos[i]+'.png" width="100"></img>';
     }
